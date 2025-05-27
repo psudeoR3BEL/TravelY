@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyExplorer - Find the best flights faster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            SkyExplorer
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Method</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Changelog</a></li>
+            </ul>
+        </nav>
+        <button class="login-button">Log in</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find the best flights faster ✈️</h1>
+            <p class="subheading">Travel smarter</p>
+
+            <form id="flight-search-form">
+                <div class="form-group">
+                    <label for="round-trip">Round trip</label>
+                    <select id="round-trip" name="round-trip" aria-label="Select trip type">
+                        <option value="round-trip">Yes</option>
+                        <option value="one-way">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="passengers">Passengers</label>
+                    <select id="passengers" name="passengers" aria-label="Select number of passengers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="from-location">From</label>
+                    <input type="text" id="from-location" name="from-location" placeholder="Warsaw, Poland" aria-label="From location" autocomplete="off">
+                    <ul id="from-suggestions" class="autocomplete-suggestions"></ul>
+                </div>
+
+                <div class="form-group">
+                    <label for="to-location">To</label>
+                    <input type="text" id="to-location" name="to-location" placeholder="Bangkok, Thailand" aria-label="To location" autocomplete="off">
+                    <ul id="to-suggestions" class="autocomplete-suggestions"></ul>
+                </div>
+
+                <button type="button" class="swap-button" aria-label="Swap locations">&#8644;</button>
+
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="airline-logos">
+            <img src="img/lufthansa.svg" alt="Lufthansa Logo">
+            <img src="img/lot.svg" alt="LOT Logo">
+            <img src="img/delta.svg" alt="Delta Logo">
+            <img src="img/klm.svg" alt="KLM Logo">
+            <img src="img/united.svg" alt="United Logo">
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
